@@ -4,6 +4,6 @@ export const creds = () => {
         host: "localhost",
         user: "root",
         database: "Commerce",
-        password: "rootadmin",
+        password: "Aloulou0905",
     }; 
 }
