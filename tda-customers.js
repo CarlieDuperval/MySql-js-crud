@@ -1,10 +1,10 @@
-
 import mysql from 'mysql2';
-import fs from 'fs'
+import fs from 'fs';
 
 const connection = mysql.createConnection({
     host: 'localhost', 
     user: 'root', // can be any name like daried, this is just a user name
+    password: '',
     database: 'Commerce'
 })
 
@@ -98,9 +98,9 @@ const createCustomersFromFile = async (fileName) => {
 
 //const collection = [[2000,'Tania Clarke','9936 MIAMI GARDENS FL','tania@aol.com','(509)956-5725']]
 //createMultipleCustomers(collection)
-//createCustomersFromFile("customers.csv")
-//.then(res => console.log("created"))
-getAllCustomers()
+createCustomersFromFile("customers.csv")
+.then(res => console.log("created"))
+//getAllCustomers()
 
 // const st = "we,love,commas"
 // const arr = st.split(",")
