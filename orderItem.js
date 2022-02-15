@@ -4,7 +4,7 @@ import fs from "fs";
 const connection = mysql.createConnection({
     host: 'localhost', 
     user: 'root', // can be any name like daried, this is just a user name
-    password: '',
+    password: 'Aloulou0905',
     database: 'Commerce'
 }
 )
